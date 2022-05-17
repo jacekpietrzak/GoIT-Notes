@@ -4,39 +4,240 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>GoIT - Notatki</title>
   </head>
+
   <body>
-    <h1>Nagłówek</h1>
-    <!-- Lista -->
-    <ul>
-      <li>Element</li>
-      <li>Element 2</li>
-      <li>Element 3</li>
-    </ul>
-    <!-- Koniec listy -->
-    <p><input type="text" name="user_name" title="imie" /></p>
-    <p></p><input type="text" name="user_pass" /></p>
-    <p><button type="submit" title="wyslij">...</button></p>
-    <p class="text">...</p>
-    <p><a href="http://google.com" target="_blank" title="Wyszukiwarka internetowa Google"> Google.com</a></p>
-    <p><img src="https://picsum.photos/640/480" alt="Dowolny obraz z generatora"/></p>
-    <!-- Article -->
-    <article>
-      <h1>Article title</h1>
-      <!-- Article image-->
-      <img src="https://picsum.photos/640/480" alt="Article image"/>
-      <!-- Article text -->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam facere, perferendis minus hic numquam cumque vel obcaecati minima eaque reprehenderit praesentium odit incidunt aspernatur, molestiae fuga temporibus expedita saepe.</p>
-    </article>
-    <!-- Web app do zmniejszania photo -->
-    <p><a href="squoosh.app">Squoosh</a> - serwis <em>optymalizacja</em> obrazków.</p>
-    <p>Zalety</p>
-    <ul>
-      <li>Działa w przeglądarce</li>
-      <li>Nie ładuje systemu</li>
-      <li>Wygodny interfejs</li>
-    </ul>
+    <header id="top"></header>
+
+    <main>
+      <aside>
+        <ul>
+          <li><a href="#komentarz">Komentarz</a></li>
+          <li><a href="#akapit">Akapit</a></li>
+          <li><a href="#naglowek">Nagłówek</a></li>
+          <li><a href="#lista">Lista </a></li>
+          <li><a href="#link">Link (Odsyłacz)</a></li>
+          <li><a href="#time">Tag time</a></li>
+          <li><a href="#znakispecjalne">Znaki specjalne</a></li>
+        </ul>
+      </aside>
+
+      <article id="komentarz">
+        <h2>Komentarz</h2>
+        <p>
+          Komentarz w kodzie oznaczamy <code>&lt;!-- komentarz --&gt;</code>
+        </p>
+        <p>W VSC zaznaczamy tekst i wciskamy skrót: <code>ctrl+k+c</code></p>
+        <p>
+          Aby zaznaczony tekst nie był już komentarzem w VSC, zaznaczamy go i
+          używamy skrótu:
+          <code>ctrl+k+u</code>
+        </p>
+      </article>
+
+      <article id="akapit">
+        <h2>Akapit <code>&lt;p&gt;</code></h2>
+        <p>
+          Znacznik <code>&lt;p&gt;</code> to podwójny znacznik tekstowy do
+          tworzenia akapitu.
+        </p>
+        <p>
+          Pomiędzy każdym znacznikiem <code>&lt;p&gt;</code> występuje podział
+          lini tekstu.
+        </p>
+        <p>Tutaj mamy 3 znaczniki <code>&lt;p&gt;</code> czyli 3 akapity.</p>
+      </article>
+
+      <article id="naglowek">
+        <h2>Nagłówek <code>&lt;h&gt;</code></h2>
+        <p>
+          Znacznik <code>&lt;h&gt;</code> jest znacznikiem tekstowym sparowanym
+          oznaczającym nagłówek.
+        </p>
+        <p>
+          Mamy 6 znaczników <code>&lt;h&gt;</code>. Począwszy od
+          <code>&lt;h1&gt;</code> i skończywszy na <code>&lt;h6&gt;</code>.
+        </p>
+        <p>Znacznik <code>&lt;h1&gt;</code> jest największy i najważniejszy.</p>
+        <p>
+          Znadznik <code>&lt;h6&gt;</code> jest najmniejszy i najmniej ważny ze
+          wszystkich znaczników <code>&lt;h&gt;</code>.
+        </p>
+        <p>Nie ma więcej znaczników niż 6.</p>
+        <p>
+          Znaczników <code>&lt;h&gt;</code> nie zagnieżdzamy w sobie. Np: do
+          <code>&lt;h1&gt;</code> nie wsadzamy <code>&lt;h2&gt;</code>.
+        </p>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+      </article>
+
+      <article id="lista">
+        <h2>Lista</h2>
+
+        <h3>
+          Znacznik <code>&lt;ol&gt;</code> jest znacznikiem listy i tworzy listę
+          numeryczną.
+        </h3>
+        <p>Znacznik <code>&lt;ol&gt;</code> jest znacznikiem sparowanym.</p>
+        <ol>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest zagnieżdżony w znaczniku
+            <code>&lt;ol&gt;</code>.
+          </li>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest znaczkiem tekstowym
+            sparowanym.
+          </li>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest znacznikiem tworzącym punkt w
+            liście.
+          </li>
+          <li>Ile znaczników <code>&lt;li&gt;</code> tyle punktów w liście.</li>
+        </ol>
+
+        <h3>
+          Znacznik <code>&lt;ul&gt;</code> jest znacznikiem listy i tworzy listę
+          punktową.
+        </h3>
+        <p>
+          Lista <code>&lt;ul&gt;</code> również wykorzystywana jest w tworzeniu
+          menu nawigacyjnego i jest to standard. Oczywiście nie musimy tak
+          robić. Można menu wykonać inaczej. Ale tak się przyjęło że tak powinno
+          się robić.
+        </p>
+        <ul>
+          <li>Punkt 1</li>
+          <li>Punkt 2</li>
+          <li>Punkt 3</li>
+        </ul>
+
+        <h3>Atrybut <code>type="rodzaj numeracji"</code>.</h3>
+        <ul>
+          <li>"1" - (domyślny) numeracja według liczb arabskich.</li>
+          <li>"I" - numeracja według liczb rzymskich.</li>
+          <li>"i" - numeracja według liczb rzymskich.</li>
+          <li>"a" - numeracja według małych liter.</li>
+          <li>"A" - numeracja według dużych liter.</li>
+        </ul>
+
+        <h3>Zagnieżdzanie listy.</h3>
+        <ul>
+          <li>
+            element 1
+            <ul>
+              <li>lista zagnieżdżona w element 1.</li>
+              <li>
+                zagnieżdżamy przez ponowne użycie znacznika
+                <code>&lt;ul&gt;</code> w znaczniky <code>&lt;li&gt;</code>.
+              </li>
+              <li>
+                nigdy nie możemy pod znacznikiem <code>&lt;ul&gt;</code> użyć
+                kolejnego znacnzika <code>&lt;ul&gt;</code>.
+              </li>
+              <li>
+                znacnzik <code>&lt;ul&gt;</code> może mieć pod sobą tylko i
+                wyłącznie znacznik pozycji lini <code>&lt;li&gt;</code>
+              </li>
+              <li>
+                W menu podlistą może być podkategoria np telewizory w sprzęcie
+                agd.
+              </li>
+            </ul>
+          </li>
+          <li>element 2</li>
+          <li>element 3</li>
+        </ul>
+
+        <h3>Znacznik <code>&lt;dl&gt;</code> to lista opisowa.</h3>
+        <p>Jest to lista bez punktów składająca się z:</p>
+        <dl>
+          <dt>Tematu <code>&lt;dt&gt;</code> - description title</dt>
+          <dd>Opisu <code>&lt;dd&gt;</code> - description description</dd>
+          <dd>Może być wiele opisów w jednym temacie.</dd>
+        </dl>
+      </article>
+
+      <article id="link">
+        <h2>Link (Odsyłacz) <code>&lt;a&gt;</code></h2>
+        <p>Znacznik <code>&lt;a&gt;</code> jest to link do innej strony</p>
+        <p>
+          Znacznik <code>&lt;a&gt;</code> posiada atrybut
+          <code>href="link strony"</code>. Np.
+          <code>&lt;a href="https://google.com"&gt;</code>
+        </p>
+        <p>
+          Znacznik <code>&lt;a&gt;</code> jest znacznikiem sparowanym i należy
+          go zamknąc znacznikiem <code>&lt;/a&gt;</code> i wstawić pomiędzy
+          tekst bądź inny element który klikamy.
+        </p>
+        <p>
+          Np. <code>&lt;a href="https://google.com"&gt;link&lt;/a&gt;</code>
+        </p>
+        <p>
+          Link do strony google.com: <a href="https://google.com">link</a> - ta
+          strona otworzy się w tym samym oknie.
+        </p>
+        <p>
+          Aby strona otwierała się w nowym oknie trzeba dodać atrybut
+          <code>target="_blank"</code>
+        </p>
+        <p>
+          Link do strony google.com otwierający się w nowej zakładce:
+          <a href="https://google.com" target="_blank">link</a>
+        </p>
+      </article>
+
+      <article id="time">
+        <h2>Tag <code>&lt;time&gt;</code></h2>
+        <p>definiuje godzinę albo datę i godzinę</p>
+        <p>
+          atrybut <code>datetime="1970-01-01T00:00"</code> używany jest do
+          konwertowania czasu i daty na format czytelny przez komputer.
+        </p>
+        <p>
+          czas w komputerach liczony jest w milisekundach zaczynając od ery
+          Uniksa - od 0 godzin, 0 minut, 1 stycznia 1970. np.:
+        </p>
+        <p>
+          Epoch of Unix time started at
+          <time datetime="1970-01-01T00:00">
+            00:00:00 UTC on 1 January 1970</time
+          >
+        </p>
+      </article>
+
+      <article id="znakispecjalne">
+        <h2>Znaki specjalne</h2>
+        <p>
+          Znaków specjalnych jest wiele. Nie trzeba ich zapamiętywać. Najlepiej
+          użyć wyszukiwarki, wyszukać <code>unicode html</code> i znaleźć listę.
+        </p>
+        <p>
+          na przykład tutaj:
+          <a href="https://unicode-table.com/en/html-entities/" target="_blank"
+            >unicode-table.com</a
+          >
+        </p>
+      </article>
+
+      <article>
+        <h2>Audio</h2>
+        <p>Znacznik <code>audio</code> umożliwia dodanie odtwarzacza audio.</p>
+        <audio controls preload="none">
+          <source
+            src="https://goit.ua/autocheck/bensound-summer.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+      </article>
+    </main>
+
+    <footer id="bottom"></footer>
   </body>
 </html>
